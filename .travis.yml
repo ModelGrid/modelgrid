@@ -1,0 +1,9 @@
+deploy:
+  provider: npm
+  email: npm@smart-coordination.com
+  api_key:
+    secure: qi3C6h7aIdy8acYP5skUh+d3U+VzMNen/0YV00cnFY6ZxX7PJ7Waot+oTntW+XbNwVQw55wl813fltYxQ0hZbvdw0wuib8vQ6GK+DftNGLpVXdwYujahFBlT1/uXqh6V4BWUqhbSbZINC83tyoAfIRsf349GVWqWLoKuXz9/zLpFpu9bV279yoEae5KhwIYt8lCuAw26dlJaZpYBKpAb+JfuaDB4eanAVHghjdR+ZjoeiigAsE1X2A/D4E7z4VIqueNyNhBy1dcR40uF0Syaot18wJniyhVQgB71HmL5kUmHeurNmQFJP43OU/9wZKbOW6H6tdBdovRDAG4DE5egRmOTHrjxk42tfDUZv1ktL96cY0Gx6a/p9zEQ1ADTSjzx0P2e/YCcAg5IgZpaKoZhNzj62HYON2gvIpyMBTHN7mliH+YD0OE/XRozN7hYV9s1iqcm7PRjHTAZFgyDXciID9gsCZuAgYkbRnJloM+Juz2Rs6ap0OauyqUOrXnCqdOwG9qoYSlYoncAc6f/awZf/eURSmLAzCcFJc8AfMtqOzSu+b0gE1ciUes/zuIrHsTph41+D6pZEL8D53ShO07dD+SpCVMGJ9PEK9lf+fY/iM2gGRFbzolpvNxVCn2hip4tEg40D+nBheXW5lw38qir2frtt7dZ1+3KnmLzMTp2CyA=
+  on:
+    branch: master
+    tags: true
+    repo: ModelGrid/modelgrid-npm
