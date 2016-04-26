@@ -1,6 +1,6 @@
 {
   "name": "modelgrid",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ModelGrid.com - npm package for easy API access",
   "main": "index.js",
   "scripts": {
