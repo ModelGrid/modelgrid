@@ -1,0 +1,167 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/philkunz/.nvm/versions/node/v4.4.3/bin/node',
+1 verbose cli   '/home/philkunz/.nvm/versions/node/v4.4.3/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.6
+3 info using node@v4.4.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/philkunz/github/modelgrid/modelgrid',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/philkunz/.npm/modelgrid/0.0.4/package.tgz not in flight; packing
+9 verbose correctMkdir /home/philkunz/.npm correctMkdir not in flight; initializing
+10 info lifecycle modelgrid@0.0.4~prepublish: modelgrid@0.0.4
+11 silly lifecycle modelgrid@0.0.4~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/philkunz/.npm/modelgrid/0.0.4/package.tgz',
+12 verbose tar pack   '/home/philkunz/github/modelgrid/modelgrid' ]
+13 verbose tarball /home/philkunz/.npm/modelgrid/0.0.4/package.tgz
+14 verbose folder /home/philkunz/github/modelgrid/modelgrid
+15 verbose addLocalTarball adding from inside cache /home/philkunz/.npm/modelgrid/0.0.4/package.tgz
+16 verbose correctMkdir /home/philkunz/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd modelgrid@0.0.4
+18 verbose afterAdd /home/philkunz/.npm/modelgrid/0.0.4/package/package.json not in flight; writing
+19 verbose correctMkdir /home/philkunz/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/philkunz/.npm/modelgrid/0.0.4/package/package.json written
+21 silly publish { name: 'modelgrid',
+21 silly publish   version: '0.0.4',
+21 silly publish   description: 'ModelGrid.com - npm package for easy API access',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Works so far!"' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/ModelGrid/modelgrid-npm.git' },
+21 silly publish   keywords: [ 'model', 'profile', 'agency' ],
+21 silly publish   author:
+21 silly publish    { name: 'Smart Coordination GmbH',
+21 silly publish      email: 'office@modelgrid.com',
+21 silly publish      url: 'https://modelgrid.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/ModelGrid/modelgrid-npm/issues' },
+21 silly publish   homepage: 'https://modelgrid.com',
+21 silly publish   readme: '# modelgrid-npm\nModelGrid.com - npm package for easy API access\n\n## build status\n[![Build Status](https://travis-ci.org/ModelGrid/modelgrid-npm.svg?branch=master)](https://travis-ci.org/ModelGrid/modelgrid-npm)\n\n\n## Usage\n\n```javascript\nvar modelgrid = require("modelgrid");\nvar mgInstance = new modelgrid("someapikeystring");\nvar mgInstance.getModels() // returns mglist object.\n```\n\n### About the authors:\n[![Project Phase](https://mediaserve.lossless.digital/lossless.com/img/createdby_github.svg)](https://lossless.com/)',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '3eccd9c432e0f17ef484b822ba179f9e9ff7b9fa',
+21 silly publish   _id: 'modelgrid@0.0.4',
+21 silly publish   _shasum: 'be58066e95fe18ca27a870ae09e7dd59489ce33b',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name modelgrid
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'modelgrid',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'modelgrid',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/modelgrid
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/philkunz/.npm/modelgrid/0.0.4/package.tgz
+30 verbose request uri https://registry.npmjs.org/modelgrid
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 2:54:05 AM
+33 verbose request using bearer token for auth
+34 verbose request id a73cf8aac7a7f6dd
+35 http request PUT https://registry.npmjs.org/modelgrid
+36 http 504 https://registry.npmjs.org/modelgrid
+37 verbose bad json <html><body><h1>504 Gateway Time-out</h1>
+37 verbose bad json The server didn't respond in time.
+37 verbose bad json </body></html>
+38 error registry error parsing json
+39 verbose headers { 'content-type': 'text/html',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'transfer-encoding': 'chunked',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Tue, 26 Apr 2016 00:54:56 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-fra1236-FRA',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1461632046.313900,VS0,VE50383',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 info retry will retry, error on last attempt: SyntaxError: Unexpected token <
+40 info retry <html><body><h1>504 Gateway Time-out</h1>
+40 info retry The server didn't respond in time.
+40 info retry </body></html>
+41 info attempt registry request try #2 at 2:55:06 AM
+42 verbose request using bearer token for auth
+43 http request PUT https://registry.npmjs.org/modelgrid
+44 http 504 https://registry.npmjs.org/modelgrid
+45 verbose bad json <html><body><h1>504 Gateway Time-out</h1>
+45 verbose bad json The server didn't respond in time.
+45 verbose bad json </body></html>
+46 error registry error parsing json
+47 verbose headers { 'content-type': 'text/html',
+47 verbose headers   'cache-control': 'max-age=300',
+47 verbose headers   'transfer-encoding': 'chunked',
+47 verbose headers   'accept-ranges': 'bytes',
+47 verbose headers   date: 'Tue, 26 Apr 2016 00:55:57 GMT',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   connection: 'keep-alive',
+47 verbose headers   'x-served-by': 'cache-fra1227-FRA',
+47 verbose headers   'x-cache': 'MISS',
+47 verbose headers   'x-cache-hits': '0',
+47 verbose headers   'x-timer': 'S1461632106.879618,VS0,VE50386',
+47 verbose headers   vary: 'Accept-Encoding' }
+48 info retry will retry, error on last attempt: SyntaxError: Unexpected token <
+48 info retry <html><body><h1>504 Gateway Time-out</h1>
+48 info retry The server didn't respond in time.
+48 info retry </body></html>
+49 info attempt registry request try #3 at 2:56:57 AM
+50 verbose request using bearer token for auth
+51 http request PUT https://registry.npmjs.org/modelgrid
+52 http 504 https://registry.npmjs.org/modelgrid
+53 verbose bad json <html><body><h1>504 Gateway Time-out</h1>
+53 verbose bad json The server didn't respond in time.
+53 verbose bad json </body></html>
+54 error registry error parsing json
+55 verbose headers { 'content-type': 'text/html',
+55 verbose headers   'cache-control': 'max-age=300',
+55 verbose headers   'transfer-encoding': 'chunked',
+55 verbose headers   'accept-ranges': 'bytes',
+55 verbose headers   date: 'Tue, 26 Apr 2016 00:57:47 GMT',
+55 verbose headers   via: '1.1 varnish',
+55 verbose headers   connection: 'keep-alive',
+55 verbose headers   'x-served-by': 'cache-fra1222-FRA',
+55 verbose headers   'x-cache': 'MISS',
+55 verbose headers   'x-cache-hits': '0',
+55 verbose headers   'x-timer': 'S1461632217.431051,VS0,VE50378',
+55 verbose headers   vary: 'Accept-Encoding' }
+56 verbose request invalidating /home/philkunz/.npm/registry.npmjs.org/modelgrid on PUT
+57 error publish Failed PUT 504
+58 verbose stack SyntaxError: Unexpected token <
+58 verbose stack <html><body><h1>504 Gateway Time-out</h1>
+58 verbose stack The server didn't respond in time.
+58 verbose stack </body></html>
+58 verbose stack
+58 verbose stack
+58 verbose stack     at Object.parse (native)
+58 verbose stack     at CachingRegistryClient.<anonymous> (/home/philkunz/.nvm/versions/node/v4.4.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:199:23)
+58 verbose stack     at Request._callback (/home/philkunz/.nvm/versions/node/v4.4.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+58 verbose stack     at Request.self.callback (/home/philkunz/.nvm/versions/node/v4.4.3/lib/node_modules/npm/node_modules/request/request.js:199:22)
+58 verbose stack     at emitTwo (events.js:87:13)
+58 verbose stack     at Request.emit (events.js:172:7)
+58 verbose stack     at Request.<anonymous> (/home/philkunz/.nvm/versions/node/v4.4.3/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+58 verbose stack     at emitOne (events.js:82:20)
+58 verbose stack     at Request.emit (events.js:169:7)
+58 verbose stack     at IncomingMessage.<anonymous> (/home/philkunz/.nvm/versions/node/v4.4.3/lib/node_modules/npm/node_modules/request/request.js:963:12)
+59 verbose cwd /home/philkunz/github/modelgrid/modelgrid
+60 error Linux 3.19.0-58-generic
+61 error argv "/home/philkunz/.nvm/versions/node/v4.4.3/bin/node" "/home/philkunz/.nvm/versions/node/v4.4.3/bin/npm" "publish"
+62 error node v4.4.3
+63 error npm  v3.8.6
+64 error Unexpected token <
+64 error <html><body><h1>504 Gateway Time-out</h1>
+64 error The server didn't respond in time.
+64 error </body></html>
+65 error If you need help, you may report this error at:
+65 error     <https://github.com/npm/npm/issues>
+66 verbose exit [ 1, true ]
